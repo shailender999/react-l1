@@ -1,0 +1,58 @@
+import AssignmentWrapper from "../AssignmentWrapper";
+
+function Assignment2() {
+    const employee_details = [
+        {
+            'name': 'Joe',
+            'id': '112211',
+            'email': 'joe@test.com'
+        },
+        {
+            'name': 'Biden',
+            'id': '112255',
+            'email': 'biden@test.com'
+        },
+        {
+            'name': 'Bill',
+            'id': '112244',
+            'email': 'bill@test.com'
+        },
+        {
+            'name': 'Clinton',
+            'id': '112233',
+            'email': 'clinton@test.com'
+        },
+        {
+            'name': 'Henry',
+            'id': '112222',
+            'email': 'henry@test.com'
+        }
+    ];
+    return ( 
+        <>
+            <h4 className="text-center">Employee Details</h4>
+            <table className="table table-stripped">
+                <thead>
+                    <tr>
+                        <th>Employee ID</th>
+                        <th>Employee Name</th>
+                        <th>Employee Email ID</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {
+                        employee_details.map((employee) => {
+                            return <tr>
+                                <td>{employee.id}</td>
+                                <td>{employee.name}</td>
+                                <td>{employee.email}</td>
+                                    </tr>
+                        })
+                    }
+                </tbody>
+            </table>
+        </>
+     );
+}
+const question = "Create a React Program that would render a Heading and also a Table with 5 employee details. The employee details to include are Employee ID, Employee Name and Employee Email ID ";
+export default AssignmentWrapper(Assignment2, question);
