@@ -12,6 +12,8 @@ import Assignment6 from './components/Assignments/Assignment6';
 import Assignment7 from './components/Assignments/Assignment7';
 import Assignment8 from './components/Assignments/Assignment8';
 import Assignment9 from './components/Assignments/Assignment9';
+import Assignment10 from './components/Assignments/Assignment10';
+import Assignment11 from './components/Assignments/Assignment11';
 
 function App() {
   return (
@@ -27,6 +29,8 @@ function App() {
         <Route path='/t07a01' element={<Assignment7 />}></Route>
         <Route path='/t08a01' element={<Assignment8 />}></Route>
         <Route path='/t09a01' element={<Assignment9 />}></Route>
+        <Route path='/t10a01' element={<Assignment10/>}></Route>
+        <Route path='/t12a01/*' element={<Assignment11/>}></Route>
         <Route path='/newcomponent' element={<NewComponent />}></Route>
         <Route path='/assignment' element={<AssignmentPdf />}></Route>
         <Route path='*' element={<Navigate to='/'  />}></Route>

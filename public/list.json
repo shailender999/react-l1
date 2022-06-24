@@ -96,5 +96,16 @@
                 "url": "t10a01"
             }
         ]
+    },
+    {
+        "topic": 12,
+        "topic_name": "React JS Router",
+        "assignments": [
+            {
+                "id": 1,
+                "assignment": "Create a React program based on the below requirements: a. The React program should support \"Movie Details Management\". b. Movie details will hold details like MovieID, MovieName, LeadActor, LeadActress, YearOfRelease, Language, Collections. c. The Program should support below routes/tasks/operations: i) / -> should display all existing movie details. ii) /MovieID -> should display only about a particular movie. iii) /addMovie -> should provide a form to enter a new movie details and add it to the existing collection.",
+                "url": "t12a01"
+            }
+        ]
     }
 ]
